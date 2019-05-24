@@ -1,14 +1,14 @@
 import graphviz
 
-dotfile = file('collatz-graph.dot', 'w')
-
-limit = 20
-
 def f(n):
     if n % 2 == 0:
         return n / 2
     else:
         return 3*n + 1
+
+dotfile = file('collatz-graph.dot', 'w')
+
+limit = 20
 
 explored = set([1])
 
